@@ -34,6 +34,7 @@ Create a new repo and demonstrate your knowledge of the following items with scr
 
 * What is Git reset?
 * What is the difference between hard, mixed and soft?
+Use the git reset command with one of the following options:
 * What is Git checkout?
 * What is Git revert?
 * In what ways are these commands the same and what ways are they different?

@@ -32,23 +32,34 @@ On a branch that has been pushed to a remote repository, especially if the branc
 
 ### Git reset, checkout, and revert
 
-* What is Git reset?
-* What is the difference between hard, mixed and soft?
-* What is Git checkout?
-* What is Git revert?
-* In what ways are these commands the same and what ways are they different?
-* When would you use reset, checkout, or revert? Why?
+# What is Git reset?
+Moves the HEAD and the branch pointer to a different commit, essentially resetting the branch to an earlier state.
+# What is the difference between hard, mixed and soft?
+- soft: move the HEAD to the specified commit and keep the changes in the staging area
+- mixed: move the HEAD to the specified commit and remove the changes from the staging area
+- hard: move the HEAD to the specified commit and discard all changes after that commit
+# What is Git checkout?
+Switch between branches, create new branches, and move the HEAD (the pointer to the current branch) to a specific commit.
+# What is Git revert?
+Allows you to undo one or more existing commits in a repository. 
+# In what ways are these commands the same and what ways are they different?
+ They are used to manage changes to a Git repository, but they differ in their specific functions.
+ git reset and git revert are used to remove changes from the repository, while git checkout and git commit are used to make changes to the repository.
+  
+# When would you use reset, checkout, or revert? Why?
+When you are wanting undo or change things you've commited in the past. A good reason why is if you messed up and pushed it. Instead of trying to recreate what you had before your mistake, you can use these to get you back to the orignial.
+
 
 Create a new repo and demonstrate your knowledge of the following items with screenshots:
 
 # Git reset
-Move the HEAD and the branch pointer to a different commit, essentially resetting the branch to an earlier state.
+![reset example](/img/reset2.png)
 # Git checkout
-Switch between branches, create new branches, and move the HEAD (the pointer to the current branch) to a specific commit. 
+ ![checkout example](/img/checkout.png)
 # a commit
-Captures a snapshot of the repository at a specific point in time, including all the changes that were made since the last commit.
+![commit example](/img/commit.png)
 # Git revert
-Allows you to undo one or more existing commits in a repository. 
+![revert example](/img/revert.png)
 
 ### Git submodules
 
